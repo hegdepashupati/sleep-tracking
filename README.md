@@ -26,7 +26,9 @@ We can run the baselines and RNN classification models as below
 ## Generating model summary and analysis figures
 This codebase also provides some accompanying scripts to make data visualizations and model summarization. 
 1. Generate data visualizations with `PYTHONPATH=$(pwd) python sleep_tracking/summarize_data.py`.
-2. Generate model analysis with `PYTHONPATH=$(pwd) python sleep_tracking/summarize_classification_results.py`. Note that this requires training the models first and modifying the `summarize_classification_results.py` script to point to the modeling output directory.   
+2. Generate model analysis with `PYTHONPATH=$(pwd) python sleep_tracking/summarize_classification_results.py`. 
+
+Note that this requires training the models first and modifying the `summarize_classification_results.py` script to point to the modeling output directory. 
 The trained model outputs are stored in  `outputs/models` directory, and the summary figures will be stored in `outputs/figures` directory. 
 
 ## License
