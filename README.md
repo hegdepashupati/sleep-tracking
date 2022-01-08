@@ -1,15 +1,12 @@
-# sleep_tracking
-
-This codebase provides pytorch-based RNN models to classify sleep stages based on acceleration and heart rate measurements from the Apple Watch
+This codebase provides an RNN model to classify sleep stages based on acceleration and heart rate measurements from Apple Watch. The predictive performance of RNN model is compared with logistic-regression and random-forest baselines. 
 
 ### Data
 
-- Data collected using the Apple Watch is available on PhysioNet: [link](https://alpha.physionet.org/content/sleep-accel/1.0.0/)
-You'll need to pull the data from [here](https://alpha.physionet.org/content/sleep-accel/1.0.0/) and add it to the `data` folder to run the pre-processing step. 
+Data collected using the Apple Watch is available on PhysioNet: [link](https://alpha.physionet.org/content/sleep-accel/1.0.0/)
 
 ## Pre-processing the data
 
-To convert the raw data into copped data run, we utilize the pre-processing script provided as a part of this [codebase](https://github.com/ojwalch/sleep_classifiers/) 
+To convert the raw data into copped data run, we utilize the pre-processing script provided as a part of this [codebase](https://github.com/ojwalch/sleep_classifiers/). 
 1. Download the [data](https://alpha.physionet.org/content/sleep-accel/1.0.0/).
 2. Paste the `heart_rate`, `labels`, and `motion` folders into the `data` directory in this repository, overwriting the empty folders.
 3. Download this [codebase](https://github.com/ojwalch/sleep_classifiers/) and run `sleep_classifiers/preprocessing/preprocessing_runner.py`.
@@ -26,7 +23,7 @@ We can run the baselines and RNN classification models as below
 5. For RNN-based classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_rnn.py`.
 
 
-## Generating model summary and analysis figures.
+## Generating model summary and analysis figures
 This codebase also provides some accompanying scripts to make data visualizations and model summarization. 
 1. Generate data visualizations with `PYTHONPATH=$(pwd) python sleep_tracking/summarize_data.py`.
 2. Generate model analysis with `PYTHONPATH=$(pwd) python sleep_tracking/summarize_classification_results.py`. Note that this requires training the models first and modifying the `summarize_classification_results.py` script to point to the modeling output directory.   

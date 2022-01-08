@@ -3,8 +3,10 @@ data/
 notebooks/
 results/
 external/
+outputs/models/*/
 *.sh
 *.slurm
+sleep_classifiers/
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
