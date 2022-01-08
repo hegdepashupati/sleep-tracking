@@ -18,9 +18,9 @@ First we convert the cropped data into features that can be used for classificat
 1. Run `PYTHONPATH=$(pwd) python sleep_tracking/generate_features.py`.
 
 We can run the baselines and RNN classification models as below 
-2. For logistic regression classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_baselines.py -c logistic-regression`.
-3. For random forest classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_baselines.py -c random-forest`.
-4. For RNN-based classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_rnn.py`.
+1. For logistic regression classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_baselines.py -c logistic-regression`.
+2. For random forest classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_baselines.py -c random-forest`.
+3. For RNN-based classifier, run `PYTHONPATH=$(pwd) python sleep_tracking/train_rnn.py`.
 
 
 ## Generating model summary and analysis figures
