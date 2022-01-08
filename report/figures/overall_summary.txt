@@ -1,0 +1,5 @@
+************************** Overall summary **************************
+Method & Acuracy & ROC AUC & Cohen Kappa & Mathews corrcoef
+RNN & 0.676 &  0.851 & 0.418 & 0.443
+Logistic Regression & 0.718 &  0.786 & 0.359 & 0.361
+Random Forest & 0.666 &  0.796 & 0.342 & 0.349

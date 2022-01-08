@@ -1,0 +1,5 @@
+************************** Threshold summary **************************
+Method & Wake correct & NREM correct & REM correct & Acuracy & Kappa
+RNN & 0.600 &  0.720 & 0.720 & 0.769 & 0.465
+Logistic Regression & 0.600 &  0.633 & 0.631 & 0.741 & 0.303
+Random Forest & 0.600 &  0.610 & 0.609 & 0.717 & 0.333
